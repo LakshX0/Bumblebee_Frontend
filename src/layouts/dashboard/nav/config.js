@@ -42,15 +42,15 @@ const navConfig = [
     icon: icon('product-variant'),
   },
   {
-    title: 'purchase',
+    title: 'orders',
     path: '/admin/purchase',
     icon: icon('ic_cart'),
   },
-  {
-    title: 'product list',
-    path: '/admin/produclist',
-    icon: icon('purchase'),
-  },
+  // {
+  //   title: 'product list',
+  //   path: '/admin/produclist',
+  //   icon: icon('purchase'),
+  // },
 ];
 
 export default navConfig;

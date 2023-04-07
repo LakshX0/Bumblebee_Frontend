@@ -38,11 +38,8 @@ export default function AddBrandModal({ open, onClose, onAddBrand }) {
 
   return (
     <Dialog open={open} onClose={onClose}>
-      <DialogTitle>New Brand</DialogTitle>
+      <DialogTitle style={{backgroundColor:"#754B83", color:"#fff"}}>New Brand</DialogTitle>
       <DialogContent>
-        <Typography variant="subtitle1" gutterBottom>
-        Brand Name
-        </Typography>
         <TextField
           required
           fullWidth
@@ -50,11 +47,11 @@ export default function AddBrandModal({ open, onClose, onAddBrand }) {
           margin="dense"
           variant="outlined"
           value={brandName}
+          label="Brand Name"
           onChange={(e) => setBrandName(e.target.value)}
         />
 
         <Typography variant="subtitle1" gutterBottom sx={{ mt: 3 }}>
-          Status
         </Typography>
         <FormControl variant="outlined" fullWidth>
           <InputLabel>Status</InputLabel>

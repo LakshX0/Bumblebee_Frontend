@@ -85,17 +85,13 @@ const [deactiveUserCount, setDeactiveUserCount] = useState(0);
 
   return (
     <>
-      <Helmet>
-        <title> Dashboard | Minimal UI </title>
-      </Helmet>
-
       <Container maxWidth="xl">
         <Typography variant="h4" sx={{ mb: 5 }}>
-          Hi, Welcome back
+          Hi, Welcome Back
         </Typography>
 
         <Grid container spacing={3}>
-          <Grid item xs={12} sm={6} md={3}>
+          <Grid item xs={12} sm={6} md={4}>
             <AppWidgetSummary
               title="Customer"
               total={customerCount}
@@ -103,36 +99,36 @@ const [deactiveUserCount, setDeactiveUserCount] = useState(0);
             />
           </Grid>
 
-          <Grid item xs={12} sm={6} md={3}>
+          {/* <Grid item xs={12} sm={6} md={3}>
             <AppWidgetSummary
               title="Catergary"
               total={categoryCount}
               color="info"
               icon={"carbon:collapse-categories"}
             />
-          </Grid>
+          </Grid> */}
 
-          <Grid item xs={12} sm={6} md={3}>
+          <Grid item xs={12} sm={6} md={4}>
             <AppWidgetSummary
               title="Brand"
               total={brandCount}
-              color="warning"
+              color="secondary"
               icon={"fluent-mdl2:verified-brand"}
             />
           </Grid>
 
-          <Grid item xs={12} sm={6} md={3}>
+          <Grid item xs={12} sm={6} md={4}>
             <AppWidgetSummary
               title="Product"
               total={productCount}
-              color="error"
+              // color="error"
               icon={"fluent-mdl2:product"}
             />
           </Grid>
 
-          <Grid item xs={12} md={6} lg={8}>
+          <Grid item xs={12} md={6} lg={6}>
             <AppWebsiteVisits
-              title="Purchase Summary"
+              title="Orders"
               chartLabels={[
                 "01/01/2023",
                 "02/01/2023",
@@ -158,7 +154,7 @@ const [deactiveUserCount, setDeactiveUserCount] = useState(0);
             />
           </Grid>
 
-          <Grid item xs={12} md={6} lg={4}>
+          <Grid item xs={12} md={6} lg={6}>
             <AppCurrentVisits
               title="User Status"
               chartData={[

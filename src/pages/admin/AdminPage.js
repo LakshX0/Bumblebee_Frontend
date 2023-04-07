@@ -272,7 +272,7 @@ export default function AdminPage() {
   return (
     <>
       <Helmet>
-        <title>Admin</title>
+        <title >Admin</title>
       </Helmet>
       <Container>
         <Stack

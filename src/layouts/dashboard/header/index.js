@@ -44,7 +44,7 @@ Header.propTypes = {
 export default function Header({ onOpenNav }) {
   return (
     <StyledRoot>
-      <StyledToolbar>
+      <StyledToolbar style={{backgroundColor:"#754B83"}}>
 
 
         <Box sx={{ flexGrow: 1 }} />

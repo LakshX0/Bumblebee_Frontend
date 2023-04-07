@@ -52,7 +52,7 @@ export default function LoginForm() {
   return (
     <>
       <Stack spacing={3}>
-        <TextField name="email" label="Email address" value={email} onChange={(e) => setEmail(e.target.value)} />
+        <TextField name="email" label="Username" value={email} onChange={(e) => setEmail(e.target.value)} />
 
         <TextField
           name="password"

@@ -50,7 +50,7 @@ export default function EditCategoryModal({ open, onClose, category, categoryDat
 
   return (
     <Dialog open={open} onClose={onClose}>
-      <DialogTitle>Edit Category</DialogTitle>
+      <DialogTitle style={{backgroundColor:"#754B83", color:"#fff"}}>Edit Category</DialogTitle>
       <DialogContent>
         <TextField
           autoFocus

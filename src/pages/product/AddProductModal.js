@@ -77,7 +77,7 @@ export default function AddProductModal({ open, onClose, onAddProduct }) {
 
   return (
     <Dialog open={open} onClose={onClose} maxWidth="sm" fullWidth>
-      <DialogTitle>New Product</DialogTitle>
+      <DialogTitle style={{backgroundColor:"#754B83", color:"#fff"}}>New Product</DialogTitle>
       <DialogContent>
         <Typography variant="subtitle1" gutterBottom>
           Product Name

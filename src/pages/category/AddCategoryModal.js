@@ -38,11 +38,8 @@ export default function AddCategoryModal({ open, onClose, onAddCategory }) {
 
   return (
     <Dialog open={open} onClose={onClose}>
-      <DialogTitle>New Category</DialogTitle>
+      <DialogTitle style={{backgroundColor:"#754B83", color:"#fff"}}>New Category</DialogTitle>
       <DialogContent>
-        <Typography variant="subtitle1" gutterBottom>
-          Category Name
-        </Typography>
         <TextField
           required
           fullWidth
@@ -50,11 +47,11 @@ export default function AddCategoryModal({ open, onClose, onAddCategory }) {
           margin="dense"
           variant="outlined"
           value={categoryName}
+          label="Category Name"
           onChange={(e) => setCategoryName(e.target.value)}
         />
 
         <Typography variant="subtitle1" gutterBottom sx={{ mt: 3 }}>
-          Status
         </Typography>
         <FormControl variant="outlined" fullWidth>
           <InputLabel>Status</InputLabel>

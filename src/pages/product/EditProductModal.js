@@ -112,7 +112,7 @@ export default function EditProductModal({ open, onClose, onEditProduct, product
 
   return (
     <Dialog open={open} onClose={onClose} maxWidth="sm" fullWidth>
-      <DialogTitle>Edit Product</DialogTitle>
+      <DialogTitle style={{backgroundColor:"#754B83", color:"#fff"}}>Edit Product</DialogTitle>
       <DialogContent>
         <Typography variant="subtitle1" gutterBottom>
           Product Name

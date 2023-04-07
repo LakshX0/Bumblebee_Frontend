@@ -1,7 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 // @mui
 import { styled } from '@mui/material/styles';
-import { Link, Container, Typography, Divider, Stack, Button } from '@mui/material';
+import { Avatar, Link, Container, Typography, Divider, Stack, Button } from '@mui/material';
 // hooks
 import useResponsive from '../hooks/useResponsive';
 // components
@@ -9,6 +9,7 @@ import Logo from '../components/logo';
 import Iconify from '../components/iconify';
 // sections
 import { RegisterForm } from '../sections/auth/register';
+import LogoURL from '../components/logo/logo.svg';
 
 // ----------------------------------------------------------------------
 
@@ -45,36 +46,22 @@ export default function LoginPage() {
 
   return (
     <>
-      <Helmet>
-        <title> Register | User </title>
-      </Helmet>
 
       <StyledRoot>
-        <Logo
-          sx={{
-            position: 'fixed',
-            top: { xs: 16, sm: 24, md: 40 },
-            left: { xs: 16, sm: 24, md: 40 },
-          }}
-        />
 
         {mdUp && (
-          <StyledSection>
-            <Typography variant="h3" sx={{ px: 5, mt: 10, mb: 5 }}>
-              Hi, Welcome Back
-            </Typography>
-            <img src="/assets/illustrations/signup.svg" alt="login" />
+          <StyledSection style={{backgroundColor:"#754B83"}}>
           </StyledSection>
         )}
 
         <Container maxWidth="sm">
           <StyledContent>
+          <center>
+            <Avatar sx={{ width: 72, height: 72 }} src={LogoURL} style={{marginBottom:20}} />
+            </center>
             <Typography variant="h4" gutterBottom>
-              Sign Up
+              <center>Sign Up</center>
             </Typography>
-            <Divider sx={{ my: 3 }}>
-
-            </Divider>
             <RegisterForm />
           </StyledContent>
         </Container>

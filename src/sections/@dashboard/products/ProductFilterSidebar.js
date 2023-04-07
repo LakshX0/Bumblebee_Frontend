@@ -50,12 +50,12 @@ export default function ShopFilterSidebar({ openFilter, onOpenFilter, onCloseFil
           sx: { width: 280, border: 'none', overflow: 'hidden' },
         }}
       >
-        <Stack direction="row" alignItems="center" justifyContent="space-between" sx={{ px: 1, py: 2 }}>
+        <Stack direction="row" alignItems="center" justifyContent="space-between" sx={{ px: 1, py: 2 }} style={{backgroundColor:"#754B83", color:"#fff"}}>
           <Typography variant="subtitle1" sx={{ ml: 1 }}>
             Filters
           </Typography>
           <IconButton onClick={onCloseFilter}>
-            <Iconify icon="eva:close-fill" />
+            <Iconify icon="eva:close-fill" style={{color:"#fff"}}/>
           </IconButton>
         </Stack>
 
@@ -63,16 +63,6 @@ export default function ShopFilterSidebar({ openFilter, onOpenFilter, onCloseFil
 
         <Scrollbar>
           <Stack spacing={3} sx={{ p: 3 }}>
-            <div>
-              <Typography variant="subtitle1" gutterBottom>
-                Category
-              </Typography>
-              <RadioGroup>
-                {FILTER_CATEGORY_OPTIONS.map((item) => (
-                  <FormControlLabel key={item} value={item} control={<Radio />} label={item} />
-                ))}
-              </RadioGroup>
-            </div>
             <div>
               <Typography variant="subtitle1" gutterBottom>
                 Category
@@ -91,7 +81,7 @@ export default function ShopFilterSidebar({ openFilter, onOpenFilter, onCloseFil
             fullWidth
             size="large"
             type="submit"
-            color="inherit"
+            style={{backgroundColor:"#754B83", color:"#fff"}}
             variant="outlined"
             startIcon={<Iconify icon="ic:round-clear-all" />}
           >

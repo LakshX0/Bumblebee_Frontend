@@ -31,7 +31,7 @@ export default function AddAdminModal({ open, handleClose, handleAddAdmin, isLoa
 
   return (
     <Dialog open={open} onClose={handleClose}>
-      <DialogTitle>Add New Admin</DialogTitle>
+      <DialogTitle  style={{backgroundColor:"#754B83", color:"#fff"}}>Add New Admin</DialogTitle>
       <DialogContent>
         <TextField
           autoFocus

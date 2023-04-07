@@ -51,7 +51,7 @@ export default function EditBrandModal({ open, onClose, brand, brandData, setBra
 
   return (
     <Dialog open={open} onClose={onClose}>
-      <DialogTitle>Edit Brand</DialogTitle>
+      <DialogTitle style={{backgroundColor:"#754B83", color:"#fff"}}>Edit Brand</DialogTitle>
       <DialogContent>
         <TextField
           autoFocus

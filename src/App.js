@@ -4,6 +4,7 @@ import Router from './routes';
 import ThemeProvider from './theme';
 import { StyledChart } from './components/chart';
 import ScrollToTop from './components/scroll-to-top';
+import './App.css';
 
 // ----------------------------------------------------------------------
 

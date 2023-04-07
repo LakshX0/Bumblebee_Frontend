@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { forwardRef } from 'react';
 import { Link as RouterLink } from 'react-router-dom';
-import myLogo from './logo.png';
+import myLogo from './logo.svg';
 
 // @mui
 import { useTheme } from '@mui/material/styles';
@@ -84,7 +84,7 @@ const Logo = forwardRef(({ disabledLink = false, sx, ...other }, ref) => {
 
   return (
     <Link to="/" component={RouterLink} sx={{ display: 'contents' }}>
-      {logo}
+      {logo} <span style={{fontSize:28, paddingLeft:15}}>BumbleBee</span>
     </Link>
   );
 });

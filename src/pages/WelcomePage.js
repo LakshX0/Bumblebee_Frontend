@@ -1,6 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import backgroundImage from "../images/store.jpg";
+import LogoURL from '../components/logo/logo.svg';
+import {Avatar } from '@mui/material';
+
+
+import "./WelcomePage.css";
 
 function WelcomePage() {
   const styles = {
@@ -101,7 +106,33 @@ function WelcomePage() {
   };
 
   return (
-    <div style={styles}>
+    <>
+    <div className="container">
+      <div className="left"></div>
+      <div className="right">
+      <center>
+            <Avatar sx={{ width: 72, height: 72 }} src={LogoURL} style={{marginBottom:20}} />
+            </center>
+      <div className="right-text">
+      Introducing "Bumble Bee" - the buzz-worthy app that lets you buy now and pay later! <br/> With a maximum entry budget of 15,000LKR and interest-free installments, anyone over 18 can make hassle-free online purchases.
+      </div>
+        <div className="button-container">
+        <button className="login">
+          <Link className="link-style" to="/login">
+          Admin
+          </Link>
+          </button>
+        <br/>
+        <button className="register">
+        <Link className="link-style" to="/register">
+          Register
+        </Link>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    {/* <div style={styles}>
       <h1 className="text-center" style={headingStyles}>
         Welcome to Bumble Bee!
       </h1>
@@ -140,7 +171,9 @@ function WelcomePage() {
         </Link>
       </div>
       </div>
-    </div>
+    </div> */}
+    </>
+
   );
 }
 
